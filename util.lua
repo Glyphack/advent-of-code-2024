@@ -31,6 +31,11 @@ function module.printTable(tbl, indent)
 	end
 end
 
+function module.printTableLine(tbl)
+	local result = table.concat(tbl, " ")
+	print(result)
+end
+
 function module.trim(s)
 	return s:match("^%s*(.-)%s*$")
 end
