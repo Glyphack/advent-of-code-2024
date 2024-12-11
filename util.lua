@@ -36,6 +36,17 @@ function module.printTableLine(tbl)
 	print(result)
 end
 
+function module.printMap(map)
+	for i = 1, #map do
+		local row = ""
+		for j = 1, #map[i] do
+			row = row .. map[i][j]
+		end
+		print(row)
+	end
+	print("-----")
+end
+
 function module.trim(s)
 	return s:match("^%s*(.-)%s*$")
 end
